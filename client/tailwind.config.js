@@ -14,9 +14,11 @@ export default {
       colors: {
         brightred: '#F25F3A',
         darkred: '#242D52',
-        greyblue: '#9095A7',
+        grayblue: '#9095A7',
         darkblue: '#1D1E25',
-        palered: '#FFEFEB',
+        royalblue: '#242d52',
+        normalgray: '#a9aaaf',
+        palered: '#ffc4b8',
         lightgray: '#FAFAFA',
         silver: '#d9d9d9',
         mid: '#979797',
