@@ -3,7 +3,7 @@ import { Navbar, Hero, About, Testimonials, Contact, Footer} from "./"
 
 const LandingPage = () => {
     return ( 
-        <div className="">
+        <div className="centered-col w-screen min-h-screen h-auto">
             <Navbar />
             <Hero />
             <About />
