@@ -60,8 +60,12 @@ html {
       @apply relative collapse
   }
 
+  .section-container {
+      @apply w-full min-h-[50vh] h-auto centered
+  }
+
   .block-container {
-      @apply w-[50vw] min-h-[50vh]
+    @apply xs:w-5/6 lg:w-4/5 desktop:w-3/5
   }
 
   .page-container {
