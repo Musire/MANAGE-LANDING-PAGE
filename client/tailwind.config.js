@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx}",
   ],
   theme: {
     extend: {
@@ -19,6 +19,7 @@ export default {
         royalblue: '#242d52',
         normalgray: '#a9aaaf',
         palered: '#ffc4b8',
+        lightred: '#FFEFEB',
         lightgray: '#FAFAFA',
         silver: '#d9d9d9',
         mid: '#979797',

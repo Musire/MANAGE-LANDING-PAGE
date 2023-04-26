@@ -95,11 +95,15 @@ html {
   }
 
   .section-title {
-    @apply xs:text-5xl xs:leading-snug xs:text-center font-bold desktop:text-6xl text-royalblue
+    @apply xs:text-5xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left
+  }
+
+  .section-subtitle {
+    @apply xs:text-4xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left w-4/5
   }
 
   .section-content {
-    @apply text-normalgray text-xl leading-relaxed
+    @apply text-normalgray text-xl leading-relaxed xs:text-center md:text-left
   }
 
   .app-button {
@@ -107,6 +111,17 @@ html {
   }
 
   .hero-article {
-    @apply flex flex-col items-center space-y-8 py-8 xs:text-center md:text-left
+    @apply flex flex-col items-center space-y-8 py-8 
+  }
+
+  .card-indicator {
+    @apply bg-brightred text-lightgray px-4 py-2 rounded-full text-2xl w-20 centered
+  }
+  .card-subtitle {
+    @apply text-royalblue xs:text-lg xs:font-bold
+  }
+
+  .card-content {
+    @apply text-normalgray leading-relaxed text-lg
   }
 }
