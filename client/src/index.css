@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brightred: #F25F3A;
+  --darkred: #242D52;
+  --greyblue: #9095A7;
+  --darkblue: #1D1E25;
+  --palered: #FFEFEB;
+  --lightgray: #FAFAFA;
+  --silver: #d9d9d9;
+  --mid: #979797;
+  --smoke: #848884;
+  --dark: #444444;
+  --darker: #0A0708;
+  --deep: #030303;
+  --deeper: #000300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    background-color: var(--deep);
+    color: var(--silver);
+    overflow-x: hidden;
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+}
+
+@layer components{
+  .centered {
+      @apply flex flex-row justify-center items-center
+  }
+
+  .centered-col {
+      @apply flex flex-col justify-center items-center
+  }
+
+  .spaced {
+      @apply flex flex-row justify-between items-center
+  }
+
+  .spaced-col {
+      @apply flex flex-col justify-between items-center
+  }
+
+  .evenly {
+      @apply flex flex-row justify-evenly items-center
+  }
+
+  .evenly-col {
+    @apply flex flex-col justify-evenly items-center
+  }
+
+  .invisilink {
+      @apply relative collapse
+  }
+
+  .block-container {
+      @apply w-[50vw] min-h-[50vh]
+  }
+
+  .page-container {
+    @apply min-h-screen w-screen
+  }
+
+  .content-container {
+    @apply h-[calc(100vh-4rem)] md:h-[calc(100vh-6rem)] centered-col md:centered w-full bg-white mt-16 md:mt-24
+  }
+
+  .easy-transition {
+    @apply duration-300 ease-in-out hover:cursor-pointer
+  }
+
+  .slow-transition {
+    @apply duration-700 ease-in-out hover:cursor-pointer
+  }
+
+  .slugish-transition {
+    @apply duration-1000 ease-in-out hover:cursor-pointer
+  }
+
+  .bg-img {
+    @apply bg-center bg-no-repeat
+  }
+
+}
