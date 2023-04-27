@@ -62,21 +62,25 @@ html {
       @apply relative collapse
   }
 
+  /*Containers*/
+
   .section-container {
       @apply w-full min-h-[50vh] h-auto centered
   }
 
   .block-container {
-    @apply xs:w-5/6 lg:w-4/5 desktop:w-3/5
+    @apply xs:w-5/6 lg:w-4/5 desktop:w-3/5 h-auto
   }
 
-  .page-container {
-    @apply min-h-screen w-screen
+  .portion-container {
+    @apply min-h-[40vh] w-screen h-auto centered
   }
 
   .content-container {
     @apply h-[calc(100vh-4rem)] md:h-[calc(100vh-6rem)] centered-col md:centered w-full bg-white mt-16 md:mt-24
   }
+
+  /*Transitions*/
 
   .easy-transition {
     @apply duration-300 ease-in-out hover:cursor-pointer
@@ -94,12 +98,19 @@ html {
     @apply bg-center bg-no-repeat
   }
 
-  .section-title {
-    @apply xs:text-5xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left
+  /*Site Styling*/
+  .subtitle {
+    @apply xs:text-4xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left w-4/5
   }
 
-  .section-subtitle {
-    @apply xs:text-4xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left w-4/5
+  .content {
+    @apply text-normalgray text-xl leading-relaxed xs:text-center md:text-left
+  }
+
+  /*Navbar Section*/
+
+  .section-title {
+    @apply xs:text-5xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left
   }
 
   .section-content {
@@ -110,13 +121,29 @@ html {
     @apply p-4 w-40 h-12 bg-brightred text-lightgray rounded-full centered shadow-xl shadow-palered
   }
 
+  .white-button {
+    @apply bg-white text-brightred p-4 w-40 rounded-full font-semibold
+  }
+  
+  /*Hero Section*/
   .hero-article {
     @apply flex flex-col items-center space-y-8 py-8 
+  }
+
+  /*Testimonials Section*/
+  .testimonial-wrapper {
+    @apply block-container centered-col
+  }
+
+  /*Contact Section*/
+  .contact-title {
+    @apply xs:text-5xl text-white xs:text-center
   }
 
   .card-indicator {
     @apply bg-brightred text-lightgray px-4 py-2 rounded-full text-2xl w-20 centered
   }
+  
   .card-subtitle {
     @apply text-royalblue xs:text-lg xs:font-bold
   }
@@ -124,4 +151,18 @@ html {
   .card-content {
     @apply text-normalgray leading-relaxed text-lg
   }
+
+  /*Footer Section*/
+  .social-media {
+    @apply w-10 h-10 fill-white
+  }
+
+  .form-input {
+    @apply bg-white rounded-full p-4 w-72
+  }
+
+  .form-button {
+    @apply bg-brightred p-4 rounded-full w-24 font-semibold
+  }
+
 }

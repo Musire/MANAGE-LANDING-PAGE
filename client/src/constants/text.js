@@ -57,7 +57,7 @@ export const ComponentText = {
     },
     footer: {
         search: "Updates in your inbox…",
-        button: "Go",
+        button: "GO",
         copywrite: "Copyright 2020. All Rights Reserved",
         links: {
             0 : "Home",

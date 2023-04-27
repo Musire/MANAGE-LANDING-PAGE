@@ -1,3 +1,4 @@
 import Testimonials from "./Testimonials"
+import Slide from "./Slide"
 
-export { Testimonials }
+export { Testimonials, Slide }
