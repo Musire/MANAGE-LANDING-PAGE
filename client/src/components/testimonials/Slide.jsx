@@ -16,9 +16,7 @@ const Slide = ({ current, view, slide, max }) => {
     const isVisible = current === slide
     const Text = text.testimonials
     const info = Text.slides[slide]
-    const status = slide < current || slide === max - 1 && current === 0 
-
-
+    const status = slide < current && slide !== 0 || slide === max - 1 && current === 0 || slide === 0 && current !== max - 1
     
     return ( 
         <div className={`slugish-transition centered-col absolute top-0 left-0 ${isVisible ? 'opacity-1 translate-x-0': `opacity-0 ${distance[status]}`}`}>
