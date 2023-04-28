@@ -9,9 +9,9 @@ const Hero = () => {
             <div className="block-container">
                 <img src={illustration} alt="illustration" className="w-full py-8" />
                 <article className="hero-article">
-                    <h2 className="section-title">{Text.title}</h2>
-                    <h4 className="section-content">{Text.content}</h4>
-                    <button className="app-button ">{Text.button}</button>
+                    <h2 className="title">{Text.title}</h2>
+                    <h4 className="content">{Text.content}</h4>
+                    <button className="hero-button ">{Text.button}</button>
                 </article>
             </div>
         </section>

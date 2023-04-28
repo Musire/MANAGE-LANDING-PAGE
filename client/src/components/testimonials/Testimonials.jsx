@@ -1,17 +1,13 @@
-import { ComponentText as text } from "../../constants/text";
-import { Slide } from ".";
+import { Slider } from ".";
+import { ComponentText as text } from "../../constants/text"
 
 const Testimonials = () => {
     const Text = text.testimonials
-    const objectArray = Object.values(Text.slides)
-    const slides = objectArray.map((item, index) => <Slide slide={index} key={item.name} />)
     return ( 
         <section className="section-container bg-white">
             <div className="testimonial-wrapper">
                 <h2 className="subtitle">{Text.title}</h2>
-                <div className="">
-                    {slides}
-                </div>                
+                <Slider max={4} view={1} />               
             </div>
         </section>
      );

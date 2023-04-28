@@ -31,9 +31,28 @@ html {
     overflow-x: hidden;
     font-family: 'Be Vietnam Pro', sans-serif;
   }
+
+  ::-webkit-scrollbar {
+    width: .75em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--dark);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--palered);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--brightred);
+    transition-duration: 2s;
+  }
 }
 
 @layer components {
+  /*Flex Box Preset*/
   .centered {
       @apply flex flex-row justify-center items-center
   }
@@ -99,6 +118,10 @@ html {
   }
 
   /*Site Styling*/
+  .title {
+    @apply xs:text-5xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left
+  }
+
   .subtitle {
     @apply xs:text-4xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left w-4/5
   }
@@ -107,19 +130,14 @@ html {
     @apply text-normalgray text-xl leading-relaxed xs:text-center md:text-left
   }
 
-  /*Navbar Section*/
-
-  .section-title {
-    @apply xs:text-5xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left
-  }
-
-  .section-content {
-    @apply text-normalgray text-xl leading-relaxed xs:text-center md:text-left
-  }
-
-  .app-button {
+  .hero-button {
     @apply p-4 w-40 h-12 bg-brightred text-lightgray rounded-full centered shadow-xl shadow-palered
   }
+
+  /*Navbar Section*/
+
+
+  
 
   .white-button {
     @apply bg-white text-brightred p-4 w-40 rounded-full font-semibold
@@ -158,11 +176,11 @@ html {
   }
 
   .form-input {
-    @apply bg-white rounded-full p-4 w-72
+    @apply bg-white rounded-full p-4 w-72 text-darkblue
   }
 
   .form-button {
-    @apply bg-brightred p-4 rounded-full w-24 font-semibold
+    @apply bg-brightred p-4 rounded-full w-24 font-semibold text-white
   }
 
 }
