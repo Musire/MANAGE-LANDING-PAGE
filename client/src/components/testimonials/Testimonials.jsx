@@ -5,9 +5,9 @@ const Testimonials = () => {
     const Text = text.testimonials
     return ( 
         <section className="section-container bg-white">
-            <div className="testimonial-wrapper">
-                <h2 className="subtitle">{Text.title}</h2>
-                <Slider max={4} view={1} />               
+            <div className="testimonial-wrapper py-16">
+                <h2 className="subtitle text-center">{Text.title}</h2>
+                <Slider max={4} view={1} />              
             </div>
         </section>
      );

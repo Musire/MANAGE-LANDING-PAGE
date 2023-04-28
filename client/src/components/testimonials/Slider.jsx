@@ -33,7 +33,7 @@ const Slider = ({ max, view}) => {
 
     return (
         <div className="spaced-col w-full pb-10">
-            <div className="h-128 w-full relative" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} >
+            <div className="xs:h-128 lg:h-96 w-full relative" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} >
                 {slides}
             </div>
             <Dots >

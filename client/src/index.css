@@ -92,7 +92,7 @@ html {
   }
 
   .portion-container {
-    @apply min-h-[40vh] w-screen h-auto centered
+    @apply min-h-[20vh] xs:min-h-[20vh] lg:h-[30vh] w-screen h-auto centered
   }
 
   .content-container {
@@ -119,11 +119,11 @@ html {
 
   /*Site Styling*/
   .title {
-    @apply xs:text-5xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left
+    @apply xs:text-5xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center lg:text-left
   }
 
   .subtitle {
-    @apply xs:text-4xl xs:leading-snug font-bold desktop:text-6xl text-royalblue xs:text-center md:text-left w-4/5
+    @apply text-3xl xs:leading-snug font-bold text-royalblue xs:text-center md:text-left w-4/5 lg:w-full
   }
 
   .content {
@@ -135,17 +135,23 @@ html {
   }
 
   /*Navbar Section*/
-
-
-  
-
-  .white-button {
-    @apply bg-white text-brightred p-4 w-40 rounded-full font-semibold
+  .navbar-link {
+    @apply text-darkblue
   }
-  
+
+  .sidebar-link {
+    @apply text-darkblue w-full text-center text-2xl border-b-2 border-grayblue
+  }
+
   /*Hero Section*/
   .hero-article {
-    @apply flex flex-col items-center space-y-8 py-8 
+    @apply flex flex-col xs:items-center lg:items-start space-y-8 py-8 xs:w-full lg:w-1/2
+  }
+
+  /**/
+
+  .white-button {
+    @apply bg-white text-brightred xs:p-4 lg:py-3 lg:px-3 xs:w-40 rounded-full font-semibold
   }
 
   /*Testimonials Section*/
@@ -153,9 +159,9 @@ html {
     @apply block-container centered-col
   }
 
-  /*Contact Section*/
+  /*About Section*/
   .contact-title {
-    @apply xs:text-5xl text-white xs:text-center
+    @apply xs:text-5xl lg:text-3xl text-white xs:text-center lg:text-left w-96
   }
 
   .card-indicator {
@@ -167,12 +173,12 @@ html {
   }
 
   .card-content {
-    @apply text-normalgray leading-relaxed text-lg
+    @apply text-normalgray leading-relaxed text-lg lg:pl-24 lg:text-sm
   }
 
   /*Footer Section*/
   .social-media {
-    @apply w-10 h-10 fill-white
+    @apply xs:w-10 xs:h-10 lg:h-5 lg:w-5 fill-white
   }
 
   .form-input {
