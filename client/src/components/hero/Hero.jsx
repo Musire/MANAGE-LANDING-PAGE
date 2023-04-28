@@ -5,9 +5,9 @@ const Hero = () => {
     const Text = text.hero
 
     return ( 
-        <section className="section-container bg-white">
-            <div className="block-container flex xs:flex-col lg:flex-row-reverse">
-                <img src={illustration} alt="illustration" className="xs:w-full lg:w-1/2 py-8" />
+        <section className="section-container bg-transparent">
+            <div className="block-container flex xs:flex-col lg:justify-between lg:flex-row-reverse">
+                <img src={illustration} alt="illustration" className="xs:w-full lg:w-[30rem] py-8" />
                 <article className="hero-article">
                     <h2 className="title">{Text.title}</h2>
                     <h4 className="content">{Text.content}</h4>

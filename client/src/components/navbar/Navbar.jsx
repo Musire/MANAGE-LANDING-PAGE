@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     const toggleOpen = () => setIsOpen(!isOpen)
     return ( 
-        <nav className="w-full h-20 bg-white centered">
+        <nav className="w-full h-20 centered bg-transparent">
             <section className="w-5/6 h-full spaced">
                 <div className="bg-img bg-contain bg-logo h-10 w-40" />
                 <ul className="spaced w-1/2 xs:hidden lg:flex">

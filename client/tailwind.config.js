@@ -67,9 +67,12 @@ export default {
         'avatar-anisha': "url('./assets/avatar-anisha.png')",
         'avatar-richard': "url('./assets/avatar-richard.png')",
         'avatar-shanai': "url('./assets/avatar-shanai.png')",
-        'bg-desktop': "url('./assets/bg-desktop.svg')",
-        'bg-mobile': "url('./assets/bg-mobile.svg')",
-        'bg-tablet': "url('./assets/bg-tablet.svg')"
+        'desktop': "url('./assets/bg-desktop.svg')",
+        'desktop-pink': "url('./assets/desktop-pink.svg')",
+        'mobile': "url('./assets/bg-mobile.svg')",
+        'mobile-pink': "url('./assets/mobile-pink.svg')",
+        'tablet': "url('./assets/bg-tablet.svg')",
+        'tablet-pink': "url('./assets/tablet-pink.svg')"
       },
     },
   },

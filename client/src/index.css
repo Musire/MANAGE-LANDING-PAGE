@@ -88,7 +88,7 @@ html {
   }
 
   .block-container {
-    @apply xs:w-5/6 lg:w-4/5 desktop:w-3/5 h-auto
+    @apply xs:w-5/6 lg:w-4/5 desktop:w-4/5 h-auto
   }
 
   .portion-container {
