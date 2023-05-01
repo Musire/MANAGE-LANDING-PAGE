@@ -19,6 +19,7 @@ export default {
         royalblue: '#242d52',
         normalgray: '#a9aaaf',
         palered: '#ffc4b8',
+        hoverred: '#ff9d85',
         lightred: '#FFEFEB',
         lightgray: '#FAFAFA',
         silver: '#d9d9d9',

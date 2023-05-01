@@ -1,6 +1,6 @@
 const Dots = ({children}) => {
     return ( 
-        <div className="spaced w-1/4">
+        <div className="w-1/4 spaced lg:hidden">
             {children}
         </div>
      );

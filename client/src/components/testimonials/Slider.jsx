@@ -29,16 +29,17 @@ const Slider = ({ max, view}) => {
     };
 
     const objectArray = Object.values(Text.slides)
-    const slides = objectArray.map((item, index) => <Slide view={view} current={currentIndex} slide={index} key={item.name} max={max} />)
+    const slides = objectArray.map((item, index) => <Slide current={currentIndex} slide={index} key={item.name} max={max} />)
 
     return (
-        <div className="spaced-col w-full pb-10">
-            <div className="xs:h-128 lg:h-96 w-full relative" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} >
+        <div className="w-full pb-10 spaced-col">
+            <div className="relative xs:w-full lg:w-1/2 xs:h-128 lg:h-96 desktop:w-1/4 desktop:-translate-x-[25%]" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} >
                 {slides}
             </div>
             <Dots >
                 {objectArray.map((item, index) => <Dot key={index} dot={index} current={currentIndex} />)}
             </Dots>
+            <button className="hero-button xs:hidden lg:block">Get Started</button>
         </div>
      );
 }

@@ -5,10 +5,10 @@ const Hero = () => {
     const Text = text.hero
 
     return ( 
-        <section className="section-container bg-transparent">
-            <div className="block-container flex xs:flex-col lg:justify-between lg:flex-row-reverse">
+        <section className="bg-transparent section-container">
+            <div className="flex block-container xs:flex-col lg:justify-between lg:flex-row-reverse">
                 <img src={illustration} alt="illustration" className="xs:w-full lg:w-[30rem] py-8" />
-                <article className="hero-article">
+                <article className="bg-no-repeat hero-article ">
                     <h2 className="title">{Text.title}</h2>
                     <h4 className="content">{Text.content}</h4>
                     <button className="hero-button ">{Text.button}</button>

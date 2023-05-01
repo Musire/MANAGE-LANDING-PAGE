@@ -131,16 +131,16 @@ html {
   }
 
   .hero-button {
-    @apply p-4 w-40 h-12 bg-brightred text-lightgray rounded-full centered shadow-xl shadow-palered
+    @apply p-4 w-40 h-12 bg-brightred text-lightgray rounded-full centered shadow-xl shadow-palered easy-transition hover:bg-hoverred hover:cursor-pointer
   }
 
   /*Navbar Section*/
   .navbar-link {
-    @apply text-darkblue
+    @apply text-darkblue easy-transition hover:cursor-pointer hover:text-grayblue
   }
 
   .sidebar-link {
-    @apply text-darkblue w-full text-center text-2xl border-b-2 border-grayblue
+    @apply text-royalblue w-full font-semibold text-center text-2xl 
   }
 
   /*Hero Section*/
@@ -151,7 +151,7 @@ html {
   /**/
 
   .white-button {
-    @apply bg-white text-brightred xs:p-4 lg:py-3 lg:px-3 xs:w-40 rounded-full font-semibold
+    @apply bg-white text-brightred xs:p-4 lg:py-3 lg:px-3 xs:w-40 rounded-full font-semibold hover:text-hoverred easy-transition
   }
 
   /*Testimonials Section*/
@@ -177,8 +177,11 @@ html {
   }
 
   /*Footer Section*/
+  .footer-links {
+    @apply text-lightgray text-lg hover:text-hoverred hover:cursor-pointer easy-transition
+  }
   .social-media {
-    @apply xs:w-10 xs:h-10 lg:h-5 lg:w-5 fill-white
+    @apply xs:w-10 xs:h-10 lg:h-5 lg:w-5 fill-white hover:fill-hoverred easy-transition
   }
 
   .form-input {
@@ -186,7 +189,7 @@ html {
   }
 
   .form-button {
-    @apply bg-brightred p-4 rounded-full w-24 font-semibold text-white
+    @apply bg-brightred p-4 rounded-full w-24 font-semibold text-white easy-transition hover:bg-hoverred hover:cursor-pointer
   }
 
 }
