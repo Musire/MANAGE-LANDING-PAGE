@@ -7,7 +7,7 @@ const Testimonials = () => {
         <section className="bg-transparent section-container">
             <div className="py-16 testimonial-wrapper">
                 <h2 className="text-center subtitle">{Text.title}</h2>
-                <Slider max={4} />              
+                <Slider max={4} view={4}  />             
             </div>
         </section>
      );

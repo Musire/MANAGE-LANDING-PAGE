@@ -21,7 +21,7 @@ const Navbar = () => {
                 </section>
                 
             </nav>
-            <section className={`absolute top-0 left-0 h-[480%]  bg-gradient-to-b from-gray-800/10 from-10% to-gray-800/30 to-15% easy-transition flex flex-col overflow-hidden w-full p-8 lg:hidden z-40 ${isOpen ? 'block' : 'collapse'}`}>
+            <section className={`absolute top-0 left-0 xs:h-[330%] md:h-[313%]  bg-gradient-to-b from-gray-800/10 from-10% to-gray-800/30 to-15% easy-transition flex flex-col overflow-hidden w-full p-8 lg:hidden z-40 ${isOpen ? 'block' : 'collapse'}`}>
                 <ul className={`bg-white spaced-col xs:flex lg:hidden gap-y-8 px-8 py-16 w-full translate-y-10 h-auto ${isOpen ? 'opacity-1' : 'opacity-0'} `}>
                     <Link className="sidebar-link">Pricing</Link>
                     <Link className="sidebar-link">Product</Link>
